@@ -3,6 +3,7 @@ import cors from 'cors';
 import "dotenv/config";
 import path from 'path';
 import {fileURLToPath} from 'url';
+import  correoController  from './controllador/correo.js';
 class Server {
 
     constructor() {
@@ -20,9 +21,7 @@ class Server {
     }
     router() {
         this.app.use(express.static(this.__dirname + '/public'));
-        this.app.use('/hola', (req, res) => {
-            res.status(200).send('holaaa')
-        })
+        this.app.use('/correo', correoController);
     }
 
     iniciar() {

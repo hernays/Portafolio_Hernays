@@ -32,26 +32,17 @@ body{
 
 }
 
-
-
-
 header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 60px;
     background: black;
     color: white;
     overflow-x: hidden;
 }
-
-.scrollHeader{
-
-    position:fixed;
-    opacity: 1;
-    transition:300ms;
-    animation: scroll 400ms linear;
-
-}
-
 
 @keyframes scroll{
 
@@ -80,7 +71,6 @@ header{
 
     padding: 10px;
     margin-top:10px;
-    margin-left: 2%;
     transition: all 300ms;
 
 
@@ -185,7 +175,6 @@ h1{
     font-weight: bold;
     text-align: center;
     letter-spacing: 5px;
-    margin: 5px;
     width:100%;
     background:black;
     color:white;
@@ -231,6 +220,8 @@ h3{
 }
 
 #tecnologias{
+    display: flex;
+    flex-direction: column;
     width:100%;
 }
 
@@ -240,14 +231,22 @@ h3{
     width:100%;
     justify-content: space-evenly;
 }
-
+#tecnologias-content div {
+    width: 50%;
+}
+#tecnologias-content ul {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       list-style: none;
+}
 
 
 #tecnologias h5{
-
     font-size:25px;
     font-weight: bold;
     margin-bottom:10px;
+    text-align: center;
 }
 
 #tecnologias li{
@@ -436,12 +435,11 @@ textarea{
     display: flex;
     flex-flow: column wrap;
     width: 23%;
-    height: 515px;
     padding: 10px;
     margin:40px;
     border-radius:10px;
     cursor:pointer;
-    transition: all 1s;
+    transition: all 300ms;
     text-align:center;
     box-shadow: 1px 0px 3px black, 0px 1px 3px gray;
 }
@@ -495,5 +493,41 @@ textarea{
     height: 800px;
     border: none;
 
+}
+
+/*pasador */
+
+.pasador{
+    display: flex;
+    background: transparent;
+    width: 50px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid white;
+    margin-left: 20px;
+}
+.btn_pasador{
+    display: flex;
+    width: 50%;
+    background: url('../assets/img/en.jpg');
+    border-radius: 50px;
+    background-size: 20px 20px;
+}
+.idioma{
+    display: flex;
+    width: 50%;
+    color: white;
+    padding: 3px;
+}
+
+.banderaES{
+    background: url('../assets/img/es.jpg');
+    background-size: 20px 20px;
+}
+
+.banderaEN{
+    background: url('../assets/img/en.jpg');
+    background-size: 20px 20px;
 }
 

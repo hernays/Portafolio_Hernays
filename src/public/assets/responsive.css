@@ -98,10 +98,18 @@
     #tecnologias h2 {
         font-size: 25px;
     }
-
+    #tecnologias h5 {
+        font-size: 20px;
+    }
+    #tecnologias li {
+        font-size: 15px;
+    }
     #acercaDeMi h2 {
         font-size: 25px;
         margin-top: 10%;
+    }
+    #acercaDeMi div h1 {
+        font-size: 25px;
     }
 
     .cards {
@@ -129,10 +137,6 @@
         height: 830px;
     }
 
-    #tecnologias-content {
-        align-items: center;
-    }
-
     strong {
         display: none;
     }
@@ -142,7 +146,29 @@
     }
 }
 
-
+@media(max-width: 490px) {
+    header{
+        justify-content: center;
+        align-items: center;
+    }
+    .ul > li{
+        padding: 5px;
+        margin-top: 0px;
+        padding: 0px;
+    }
+    .ul>li>a {
+        font-size: 12px;
+    }
+    .pasador{
+        height: 15px;
+    }
+    .btn_pasador{
+        background-size: 17px 17px;
+    }
+    .idioma{
+        font-size: 11px;
+    }
+}
 @media(max-width: 375px) {
 
     #presentacion .cajaNombre{
@@ -163,8 +189,14 @@
         justify-content: center;
     }
 
-    .ul>li {
+    .ul> li {
         padding: 5px;
+    }
+    .ul > li > a{
+        font-size: 11px;
+    }
+    .pasador{
+        margin-top: 10px;
     }
 
 }
