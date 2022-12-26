@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -8,32 +8,31 @@
     <link href="assets/styles.css" rel="stylesheet" />
     <link href="assets/responsive.css" rel="stylesheet" />
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./assets/js/jquery.js" type="text/javascript"></script>   
 </head>
 
 <body>
     <div id="content">
         <div id="content-header">
             <header id="header">
-                    <div class="pasador">
-                        <span class="idioma">ES</span>
-                        <div class="btn_pasador"></div>
-                    </div>
-                    <ul class="ul">
-                        <li></li>
-                        <li>
-                            <a href="#acercaDeMi">Sobre Mi</a>
-                        </li>
-                        <li>
-                            <a href="#proyectos-link">Proyectos</a>
-                        </li>
-                        <li>
-                            <a href="#contacto-link">Contanto</a>
-                        </li>
-                        <li>
-                            <a id="curriculo" href="./assets/curriculo.pdf">Curriculo</a>
-                        </li>
-                    </ul>
+                <div class="pasador">
+                    <span class="idioma">EN</span>
+                    <div class="btn_pasador"></div>
+                </div>
+                <ul class="ul">
+                    <li></li>
+                    <li>
+                        <a href="#acercaDeMi">About me</a>
+                    </li>
+                    <li>
+                        <a href="#proyectos-link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contacto-link">Contact</a>
+                    </li>
+                    <li>
+                        <a id="curriculo" href="./assets/curriculo.pdf">Curriculum</a>
+                    </li>
+                </ul>
             </header>
             <div id="presentacion">
                 <div class="cajaLogo">
@@ -43,7 +42,7 @@
                 </div>
                 <div class="cajaNombre">
                     <h2 class="nombres nombre-flex">Hernays Gonzalez Vibanco</h2>
-                    <h3 class="nombres nombre-flex-2">Desarrollador Web</h3>
+                    <h3 class="nombres nombre-flex-2">Developer Web</h3>
                 </div>
             </div>
         </div>
@@ -54,24 +53,21 @@
                     <img src="assets/img/foto-hernays.png">
                 </div>
                 <div id="sobreMi">
-                    <h1>Sobre Mi</h1>
-                    <p>
-                        Soy ingeniero en sistemas con mas de 2 años de experincia, contantemente sigo haciendo cursos
-                        para mi desarrollo profesional, me considero una persona que le gustar estar siempre a la
-                        vanguardia con los avances tecnologicos.
+                    <h1>About me</h1>
+                    <p class="sobreMi1">
+                        I am a systems engineer with more than 2 years of experience, I constantly continue taking
+                        courses for my professional development, I consider myself a person who likes to always be at
+                        the forefront of technological advances.
                     </p>
-                    <p>
-                        hoy en dia me encuentro en la busqueda de una empresa que me de la oportunidad de poder aportar
-                        mis conocimientos
-                        y de la misma manera me permita crecer tanto de manera profesional como personal.
-
-                    </p>
+                    <p class="sobreMi2">
+                        Today I am looking for a company that gives me the opportunity to contribute my knowledge and in
+                        the same way allows me to grow both professionally and personally.</p>
                 </div>
             </div>
             <div id="tecnologias">
                 <div id="tecnologias-content">
                     <div>
-                        <h5>Habilidades</h5>
+                        <h5 class="habilidades">Skills</h5>
                         <ul>
                             <li> HTML5 </li>
                             <li> CSS3 </li>
@@ -87,38 +83,47 @@
                     </div>
                     <div>
                         <h5>Hobbies</h5>
-                        <ul>
+                        <ul class="hobbies">
                             <li>
-                                Familia
+                                Family
                             </li>
 
                             <li>
-                                Naturaleza
+                                Nature
                             </li>
                             <li>
-                                Compartir
+                                Share
                             </li>
                             <li>
-                                Viajes
+                                Travels
                             </li>
                             <li>
-                                Deportes
+                                Sports
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
-        <iframe id="proyectos-link" class="iframes box" src="proyectos.html"></iframe>
-        <iframe id="contacto-link" class="iframes" src="contactos.html"></iframe>
+        <section class="section proyectos">
+            <!--proyectos-->
+        </section>
+        <div class="contacto">
+            <!--contacto-->
+        </div>
         <footer>
             <p>
                 © 2021 Copyright: Hernays Gonzalez
             </p>
         </footer>
     </div>
+    <script src="assets/js/traductor.js"></script>
+    <script src="assets/js/traductorProyectos.js"></script>
+    <script src="assets/js/traductorContacto.js"></script>
     <script src="assets/js/binamon.js"></script>
     <script src="assets/js/scrollCajas.js"></script>
+    <script src="components/proyectos.js"></script>
+    <script src="components/contactos.js"></script>
 </body>
 
 </html>

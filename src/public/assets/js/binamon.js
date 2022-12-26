@@ -51,30 +51,35 @@ function dubeNails() {
  */
 
 const pasador = () => {
-    const pasador = document.querySelectorAll('.pasador');
     const btn = document.querySelectorAll('.btn_pasador');
     const idioma = document.querySelectorAll('.idioma');
-    console.log(btn[0])
-    if(btn[0]){
-        btn[0].addEventListener('click',() => {
-            if(idioma[0].style.order  !== '2'){
-                idioma[0].style.order = '2';
-                btn[0].style.order = '1';
-                idioma[0].innerHTML = 'EN';
-                btn[0].classList.add('banderaES');
-                btn[0].classList.remove('banderaEN');
-            }else{
+    if (btn[0]) {
+        btn[0].addEventListener('click', () => {
+            console.log('binamons')
+            if (idioma[0].style.order !== '1') {
                 idioma[0].style.order = '1';
                 btn[0].style.order = '2';
                 idioma[0].innerHTML = 'ES';
+                idiomaGeneral = 'ES';
                 btn[0].classList.add('banderaEN');
                 btn[0].classList.remove('banderaES');
+            } else {
+                idioma[0].style.order = '2';
+                btn[0].style.order = '1';
+                idioma[0].innerHTML = 'EN';
+                idiomaGeneral = 'EN';
+                btn[0].classList.add('banderaES');
+                btn[0].classList.remove('banderaEN');
             }
+            inicio(idiomaGeneral);
+            inicioProyecto(idiomaGeneral);
+            inicioContacto(idiomaGeneral);
         })
     }
 }
-
 pasador();
+
+
 
 
 

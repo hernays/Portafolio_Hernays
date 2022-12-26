@@ -1,5 +1,5 @@
 
-let animado = document.querySelector('#proyectos-link');
+let animado = document.querySelector('.proyectos');
 
 window.onscroll = () => {
 

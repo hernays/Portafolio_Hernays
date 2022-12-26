@@ -8,7 +8,8 @@
     #figura {
         display: none;
     }
-    #sobreMi{
+
+    #sobreMi {
         width: 65%;
     }
 
@@ -37,12 +38,13 @@
         height: 140px;
     }
 
-    #presentacion{
+    #presentacion {
         display: flex;
         flex-flow: column wrap;
         height: auto;
     }
-    #presentacion .cajaNombre{
+
+    #presentacion .cajaNombre {
         height: 130px;
     }
 
@@ -98,16 +100,20 @@
     #tecnologias h2 {
         font-size: 25px;
     }
+
     #tecnologias h5 {
         font-size: 20px;
     }
+
     #tecnologias li {
         font-size: 15px;
     }
+
     #acercaDeMi h2 {
         font-size: 25px;
         margin-top: 10%;
     }
+
     #acercaDeMi div h1 {
         font-size: 25px;
     }
@@ -141,45 +147,54 @@
         display: none;
     }
 
-    #presentacion .nombres{
+    #presentacion .nombres {
         font-size: 25px;
     }
 }
 
 @media(max-width: 490px) {
-    header{
+    header {
         justify-content: center;
         align-items: center;
     }
-    .ul > li{
+
+    .ul>li {
         padding: 5px;
         margin-top: 0px;
         padding: 0px;
     }
+
     .ul>li>a {
         font-size: 12px;
     }
-    .pasador{
+
+    .pasador {
         height: 15px;
     }
-    .btn_pasador{
+
+    .btn_pasador {
         background-size: 17px 17px;
     }
-    .idioma{
+
+    .idioma {
         font-size: 11px;
     }
 }
+
 @media(max-width: 375px) {
 
-    #presentacion .cajaNombre{
+    #presentacion .cajaNombre {
         height: 80px;
     }
-    #presentacion .nombres{
+
+    #presentacion .nombres {
         font-size: 20px;
     }
-    #logo{
+
+    #logo {
         height: 140px;
     }
+
     #content-header {
         height: 310px;
     }
@@ -189,13 +204,15 @@
         justify-content: center;
     }
 
-    .ul> li {
+    .ul>li {
         padding: 5px;
     }
-    .ul > li > a{
+
+    .ul>li>a {
         font-size: 11px;
     }
-    .pasador{
+
+    .pasador {
         margin-top: 10px;
     }
 

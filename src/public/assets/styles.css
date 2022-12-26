@@ -1,7 +1,8 @@
-html{
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
@@ -9,13 +10,13 @@ body{
 }
 
 
-#content{
+#content {
     display: flex;
-    flex-flow:column wrap;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height:100%;
+    height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
@@ -25,14 +26,14 @@ body{
 
 }
 
-#content-header{
+#content-header {
     width: 100%;
     height: 380px;
-    background:black;
+    background: black;
 
 }
 
-header{
+header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -44,50 +45,51 @@ header{
     overflow-x: hidden;
 }
 
-@keyframes scroll{
+@keyframes scroll {
 
-    0%{
- 
+    0% {
+
         opacity: 0;
     }
-    100%{
-        opacity:1;
+
+    100% {
+        opacity: 1;
 
     }
 
 }
 
-.ul{
+.ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
-    margin:0px;
+    margin: 0px;
     margin-right: 5%;
     list-style: none;
 }
 
 
-.ul > li{
+.ul>li {
 
     padding: 10px;
-    margin-top:10px;
+    margin-top: 10px;
     transition: all 300ms;
 
 
 }
 
-.ul li > a{
+.ul li>a {
     text-decoration: none;
     font-size: 20px;
     letter-spacing: 3px;
-    cursor:pointer;
-    color:white;
-    padding:5px;
+    cursor: pointer;
+    color: white;
+    padding: 5px;
     transition: all 300ms;
-  
+
 }
 
-.ul  li:hover a{
+.ul li:hover a {
 
     text-shadow: 0px 1px 10px white;
     box-shadow: 1px 0px 1px #ccc inset;
@@ -95,61 +97,65 @@ header{
 }
 
 
-#curriculo{
+#curriculo {
     background: #568ae6;
-    color:white;
+    color: white;
     padding: 5px;
-    border-radius:5px;
-    cursor:pointer;
+    border-radius: 5px;
+    cursor: pointer;
     transition: all 300ms;
 }
 
-#curriculo:hover{
+#curriculo:hover {
     background: #1d58bd;
-   
+
 }
 
-#figura img{
+#figura img {
 
     display: block;
     width: 75%;
-    height:100%;
+    height: 100%;
     border-radius: 43px;
 
 }
 
-#logo{
+#logo {
     display: block;
     width: 12%;
     font-size: 1500%;
-    cursor:pointer;
+    cursor: pointer;
     animation: logo 2s linear infinite;
 }
 
-@keyframes logo{
-    0%{
+@keyframes logo {
+    0% {
         text-shadow: 0px 0px 5px white;
-}50%{
-    text-shadow: 0px 0px 5px gray;
-}100%{
-    text-shadow: 0px 0px 5px white;
-}
+    }
+
+    50% {
+        text-shadow: 0px 0px 5px gray;
+    }
+
+    100% {
+        text-shadow: 0px 0px 5px white;
+    }
 }
 
 
-#presentacion{
+#presentacion {
     display: flex;
     flex-flow: row wrap;
-    align-items:center;
+    align-items: center;
     justify-content: space-around;
     width: 100%;
-    height:74%;
+    height: 74%;
     text-shadow: 1px 0px 1px gray, 1px 0px 1px white;
     transition: 300ms;
     overflow-x: hidden;
 }
 
-#figura{
+#figura {
     width: 20%;
     height: 70%;
     border-radius: 50px;
@@ -158,170 +164,177 @@ header{
 
 
 @keyframes nombre {
-    0%{
-        opacity:0;
+    0% {
+        opacity: 0;
         right: 0%;
         overflow-x: hidden;
     }
-    100%{
-        right:10%;
+
+    100% {
+        right: 10%;
         opacity: 1;
         text-shadow: 3px 0px 5px gray, 2px 0px 3px white;
     }
 }
 
-h1{
+h1 {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
     letter-spacing: 5px;
-    width:100%;
-    background:black;
-    color:white;
+    width: 100%;
+    background: black;
+    color: white;
 }
 
-h3{
+h3 {
     font-size: 20px;
     text-align: center;
     letter-spacing: 5px;
     margin: 5px;
 }
 
-#presentacion .cajaNombre{
+#presentacion .cajaNombre {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-#presentacion h3{
-    margin:0px;
+
+#presentacion h3 {
+    margin: 0px;
     overflow: hidden;
-    font-size:25px;
+    font-size: 25px;
 }
 
-#presentacion .nombres{
-    color:white;
-    font-size:30px;
+#presentacion .nombres {
+    color: white;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
 /* content section*/
 
-.section{
+.section {
     display: flex;
     flex-flow: column wrap;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     margin-top: 40px;
 }
 
-.proyectos{
-    
-    align-items: left !important;
+.proyectos {
+    width: 100%;
+    opacity: 0;
 }
 
-#tecnologias{
+.contacto {
+    width: 100%;
+}
+
+#tecnologias {
     display: flex;
     flex-direction: column;
-    width:100%;
+    width: 100%;
 }
 
-#tecnologias-content{
-    display:flex;
-    flex-flow:row wrap;
-    width:100%;
+#tecnologias-content {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
     justify-content: space-evenly;
 }
+
 #tecnologias-content div {
     width: 50%;
 }
+
 #tecnologias-content ul {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
 }
 
 
-#tecnologias h5{
-    font-size:25px;
+#tecnologias h5 {
+    font-size: 25px;
     font-weight: bold;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
-#tecnologias li{
+#tecnologias li {
     font-size: 20px;
-    padding:5px;
+    padding: 5px;
 }
 
-.imagenes{
-
-    width:90px;
+.imagenes {
+    width: 90px;
     height: 80px;
-    margin-left:20px;
+    margin-left: 20px;
     animation: logos 4s linear;
-
-
 }
 
 
-@keyframes logos{
+@keyframes logos {
 
-    0%{
-        opacity:0;
-     
-    }100%{
-        opacity:1;
-        
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+
     }
 }
 
 
-#acercaDeMi{
+#acercaDeMi {
 
     display: flex;
-    flex-flow:row wrap;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
     width: 100%;
     letter-spacing: 1px;
 }
 
-#sobreMi{
+#sobreMi {
     display: flex;
     flex-flow: column wrap;
-    width:40%;
+    width: 40%;
 
 }
 
-#acercaDeMi div h1{
+#acercaDeMi div h1 {
 
-    color:black;
+    color: black;
     font-size: 30px;
-    background:none;
+    background: none;
 
 
 }
 
-#acercaDeMi div p{
+#acercaDeMi div p {
     font-size: 20px;
     text-align: justify;
 }
 
-#acercaDeMi div p:nth-child(2){
-    margin-bottom:0px;
+#acercaDeMi div p:nth-child(2) {
+    margin-bottom: 0px;
 }
 
 
-footer{
-    
+footer {
+
     align-self: flex-end;
     margin-top: 50px;
-    color:white;
+    color: white;
     text-align: center;
     background: black;
-    width:100%;
-    height:50px;
+    width: 100%;
+    height: 50px;
 }
 
 
@@ -329,7 +342,7 @@ footer{
 /* contacto*/
 
 
-#formContacto{
+#formContacto {
 
     display: flex;
     flex-flow: column wrap;
@@ -338,43 +351,43 @@ footer{
     justify-content: space-around;
 }
 
-#formContacto div{
-    display:flex;
+#formContacto div {
+    display: flex;
     flex-flow: row wrap;
     flex-grow: 1;
-    align-items:center;
+    align-items: center;
     justify-content: space-around;
     width: 100%;
 }
 
-#formContacto div form{
+#formContacto div form {
     display: flex;
     width: 35%;
-    height:570px;
-    background: rgba(108,99,255,0.5);
+    height: 570px;
+    background: rgba(108, 99, 255, 0.5);
 
     margin: 0px auto;
-    flex-flow:column wrap;
+    flex-flow: column wrap;
     padding: 20px;
     box-shadow: 0px 0px 4px black;
     border-radius: 10px;
 
 }
 
-h2{
-    color:white;
+h2 {
+    color: white;
     font-size: 30px;
     font-weight: bold;
 }
 
-label{
+label {
     color: black;
-    font-weight:bold;
-    font-size:16px;
+    font-weight: bold;
+    font-size: 16px;
 
 }
 
-#formContacto p{
+#formContacto p {
     font-size: 20px;
     text-align: center;
     display: block;
@@ -387,82 +400,83 @@ label{
 
 
 
-input[type="text"],input[type="email"]{
- padding: 18px;
- border-radius:8px;
+input[type="text"],
+input[type="email"] {
+    padding: 18px;
+    border-radius: 8px;
 }
 
-input[type="submit"]{
+input[type="submit"] {
     padding: 8px;
     margin: 8px;
-    background:rgb(19, 194, 42);
+    background: rgb(19, 194, 42);
     color: white;
     font-weight: bold;
     cursor: pointer;
     letter-spacing: 2px;
     transition: all 300ms;
-    border-radius:3px;
+    border-radius: 3px;
 
 }
 
-textarea{
+textarea {
     height: 180px;
 }
 
-input[type="submit"]:hover{
-    
-    background:rgb(17, 233, 46);
+input[type="submit"]:hover {
+
+    background: rgb(17, 233, 46);
 
 }
 
 
 
-textarea{
- 
+textarea {
+
     min-height: 100px;
     padding: 5px;
     border-radius: 5px;
 }
 
 
-#cards-content{
+#cards-content {
     display: flex;
     flex-flow: row wrap;
     flex-grow: initial;
 }
 
-.cards{
+.cards {
     display: flex;
     flex-flow: column wrap;
     width: 23%;
     padding: 10px;
-    margin:40px;
-    border-radius:10px;
-    cursor:pointer;
+    margin: 40px;
+    border-radius: 10px;
+    cursor: pointer;
     transition: all 300ms;
-    text-align:center;
+    text-align: center;
     box-shadow: 1px 0px 3px black, 0px 1px 3px gray;
 }
 
-.cards:hover{
+.cards:hover {
     box-shadow: 1px 1px 5px black, 0px 1px 5px blue, 1px 0px 2px black;
 }
 
-.cards:hover{
-    transform:scale(1.1);
+.cards:hover {
+    transform: scale(1.1);
 }
 
 
-.cards > img{
+.cards>img {
     width: 100%;
     height: 180px;
 }
 
-.cards .mexico{
+.cards .mexico {
     background-color: black;
 }
 
-.cards p{
+.cards p {
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
@@ -470,25 +484,28 @@ textarea{
     transition: all 300ms;
 }
 
-.box{
+.box {
     transition: all 1s;
     opacity: 0;
 }
 
-.animado{
+.animado {
     animation: ani 1s;
+    opacity: 1 !important;
 }
 
-@keyframes ani{
+@keyframes ani {
 
-    0%{
+    0% {
         transform: translateY(100px);
-    }100%{
+    }
+
+    100% {
         transform: translateY(0);
     }
 }
 
-.iframes{
+.iframes {
     width: 100%;
     height: 800px;
     border: none;
@@ -497,7 +514,7 @@ textarea{
 
 /*pasador */
 
-.pasador{
+.pasador {
     display: flex;
     background: transparent;
     width: 50px;
@@ -507,27 +524,29 @@ textarea{
     border: 2px solid white;
     margin-left: 20px;
 }
-.btn_pasador{
+
+.btn_pasador {
     display: flex;
     width: 50%;
-    background: url('../assets/img/en.jpg');
+    background: url('../assets/img/es.jpg');
     border-radius: 50px;
     background-size: 20px 20px;
+    cursor: pointer;
 }
-.idioma{
+
+.idioma {
     display: flex;
     width: 50%;
     color: white;
     padding: 3px;
 }
 
-.banderaES{
+.banderaES {
     background: url('../assets/img/es.jpg');
     background-size: 20px 20px;
 }
 
-.banderaEN{
+.banderaEN {
     background: url('../assets/img/en.jpg');
     background-size: 20px 20px;
 }
-
