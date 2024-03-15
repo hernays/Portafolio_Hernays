@@ -36,7 +36,7 @@ const inicio = (idioma) => {
    menu[3].innerHTML = 'Curriculo';
    tituloHeader.innerHTML = 'Desarrollador Web'
    tituloSobreMi.innerHTML = 'Sobre Mi';
-   sobreMi1.innerHTML = 'Soy ingeniero en sistemas con mas de 3 años de experincia, contantemente sigo haciendo cursos para mi desarrollo profesional, me considero una persona que le gusta estar siempre a la vanguardia con los avances tecnologicos.';
+   sobreMi1.innerHTML = 'Soy ingeniero en sistemas con mas de 5 años de experincia, contantemente sigo haciendo cursos para mi desarrollo profesional, me considero una persona que le gusta estar siempre a la vanguardia con los avances tecnologicos.';
    sobreMi2.innerHTML = 'hoy en dia me encuentro en la busqueda de una empresa que me de la oportunidad de poder aportar mis conocimientos y de la misma manera me permita crecer tanto de manera profesional como personal.';
    habilidades.innerHTML = 'Habilidades';
    hobbies[0].innerHTML = 'Familia';
