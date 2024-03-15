@@ -25,7 +25,7 @@ class Server {
     }
 
     iniciar() {
-        this.app.listen(process.env.PORT || 1040, () => {
+        this.app.listen(process.env.PORT || 1020, () => {
             console.log('servidor corriendo en puerto', process.env.PORT)
         })
     }
