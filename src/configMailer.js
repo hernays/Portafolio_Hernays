@@ -13,6 +13,8 @@ import "dotenv/config";
 
   transporter.verify().then( () => {
       console.log('funcionando ok')
-  }) 
+  }).catch(() => {
+    console.log('error en conexion de nodeMailer')
+  })
 
   export default transporter;
