@@ -7,7 +7,7 @@ const inicioProyecto = (idioma) => {
     const parrafos = document.querySelectorAll('.cards p');
 
     if (idioma === 'EN') {
-        hp.innerHTML = 'functionalities';
+        hp.innerHTML = 'Banco Estado';
         proyectos.innerHTML = 'PROJECTS';
         parrafos[0].innerHTML = 'Updating and maintenance of the content of landings of movistar offers, development of new functionalities and improvements to the code.';
         parrafos[1].innerHTML = 'Work modality agile Scrum methodology, task organization with trello platform.';
@@ -29,7 +29,7 @@ const inicioProyecto = (idioma) => {
         <br><br>
         <stron>BackEnd Technologies:</stron> NodeJs / MongoDB / Express / JWT / Cloudinary / Postman.`;
     } else {
-        hp.innerHTML = 'Funcionalidades';
+        hp.innerHTML = 'Banco Estado';
         proyectos.innerHTML = 'PROYECTOS';
         parrafos[0].innerHTML = 'Actualización y mantenimiento del contenido de landings ofertas de movistar, desarrollo de nuevas funcionalidades y mejoras al codigo.';
         parrafos[1].innerHTML = 'Modalidad de trabajo metodologia ágil Scrum, organización de tareas con plataforma trello.';
@@ -39,13 +39,13 @@ const inicioProyecto = (idioma) => {
             <stron>Tecnologias en FrontEnd:</stron> HTML / SASS / JavaScript / Angular Material.
                     <br><br>
             <stron>Tecnologias en BackEnd:</stron> NodeJs / MongoDB / Express / JWT / Postman.`;
-        parrafos[5].innerHTML = `Desarrollo de aplicaciones web con Angular para entidad Bancaria, desarrollo de front y back, pruebas de Test con Jest tanto en front como en back , pruebas de performance, Documentación, manejo de protocolos http, Rxjs, Git. Usando Jira como sistema de administración, metodología Agile/Scrum, integración con servicios REST.`;
-        parrafos[6].innerHTML = `  Desarrollo Front end Web con Angular, integración con servicios REST, HTML / SASS / Librerias
+        parrafos[5].innerHTML = `Desarrollo de aplicaciones web con Angular para entidad Bancaria, desarrollo de front y back, pruebas de Test con Jest tanto en front como en back , pruebas de performance, Documentación, manejo de protocolos http, Rxjs, Git. Usando Jira como sistema de administración, metodología Agile/Scrum, integración con servicios REST, microFront.`;
+        parrafos[6].innerHTML = `  Desarrollo Front end Web con Angular v10 - v16, integración con servicios REST, HTML / SASS / Librerias
                     internas del banco.
                     <br><br>
-                    Desarrollo Back end con NodeJs, integración de base de datos relacionales y no relacionales, Express
+                    Desarrollo Back end con NodeJs y  NestJs, integración de base de datos relacionales y no relacionales, Express
                     / MongoDB /
-                    MySql / Postman / JEST / Jmeter.
+                    MySql / Postman / JEST / Jmeter / PLMC.
                 `;
         parrafos[7].innerHTML = `Desarrollo de aplicaciones web con Angular para entidad Estetica, desarrollo de front y back, desplegue en servidor Ubuntu con Nginx y pm2.
         manejo de protocolos http, Rxjs, Github, notificacionPush, integración con servicios REST.`;

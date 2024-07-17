@@ -1,3 +1,19 @@
+
+const subirScroll = () => {
+    setTimeout( () => {
+        window.scroll({
+            top: 0,
+            behavior: 'smooth'
+        })
+    },300)
+}
+document.querySelector('#btnInicio').click();
+
+
+
+const btn = document.querySelectorAll('.btn_pasador');
+const idioma = document.querySelectorAll('.idioma');
+
 let formulario = document.getElementById('formulario');
 if (formulario) {
     formulario.addEventListener('submit', (e) => {
@@ -43,7 +59,7 @@ function bancoEstado() {
     open('https://www.bancoestado.cl/');
 }
 function dubeNails() {
-    open('https://www.dubenails.xyz/');
+    open('https://www.dubenails.com/');
 }
 
 /**
@@ -51,25 +67,15 @@ function dubeNails() {
  */
 
 const pasador = () => {
-    const btn = document.querySelectorAll('.btn_pasador');
-    const idioma = document.querySelectorAll('.idioma');
     if (btn[0]) {
         btn[0].addEventListener('click', () => {
-            console.log('binamons')
             if (idioma[0].style.order !== '1') {
-                idioma[0].style.order = '1';
-                btn[0].style.order = '2';
-                idioma[0].innerHTML = 'ES';
                 idiomaGeneral = 'ES';
-                btn[0].classList.add('banderaEN');
-                btn[0].classList.remove('banderaES');
+                estilosBtnIdioma('0')
             } else {
-                idioma[0].style.order = '2';
-                btn[0].style.order = '1';
-                idioma[0].innerHTML = 'EN';
                 idiomaGeneral = 'EN';
-                btn[0].classList.add('banderaES');
-                btn[0].classList.remove('banderaEN');
+                estilosBtnIdioma('1')
+            
             }
             inicio(idiomaGeneral);
             inicioProyecto(idiomaGeneral);
@@ -77,6 +83,47 @@ const pasador = () => {
         })
     }
 }
+const idiomaModal = () => {
+    const modal = document.querySelectorAll('.modal')[0];
+    const espanol = document.querySelector('#btnEspanol');
+    const ingles = document.querySelector('#btnIngles');
+
+    espanol.addEventListener('click', () => {
+        inicio('ES');
+        inicioProyecto('ES');
+        inicioContacto('ES');
+        estilosBtnIdioma('0')
+        modal.classList.add('hideModal')
+        document.querySelector('body').classList.add('showScroll')
+
+
+    })
+    ingles.addEventListener('click', () => {
+        inicio('EN');
+        inicioProyecto('EN');
+        inicioContacto('EN');
+        modal.classList.add('hideModal')
+        document.querySelector('body').classList.add('showScroll')
+    })
+}
+
+
+const estilosBtnIdioma = (value) => {
+    if(value !== '1'){
+        idioma[0].style.order = '1';
+        btn[0].style.order = '2';
+        idioma[0].innerHTML = 'ES';
+        btn[0].classList.add('banderaEN');
+        btn[0].classList.remove('banderaES');
+    }else {
+        idioma[0].style.order = '2';
+        btn[0].style.order = '1';
+        idioma[0].innerHTML = 'EN';
+        btn[0].classList.add('banderaES');
+        btn[0].classList.remove('banderaEN');
+    }
+}
+idiomaModal()
 pasador();
 
 

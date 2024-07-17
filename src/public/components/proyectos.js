@@ -27,8 +27,7 @@ const proyectos = () => {
             </p>
         </div>
         <div class="cards" onclick="bancoEstado()">
-            <h4 class="hp">functionalities
-                <hr><br>Boton Pago Empresas<br>Comercio Exterior
+            <h4 class="hp">Banco Estado
             </h4>
             <img class="mexico" src="https://www.oriencoop.cl/resources/upload/174908-bancoestado.png">
             <p> Development of web applications with Angular for Bank entity, front and back development,
@@ -36,9 +35,9 @@ const proyectos = () => {
             Agile / Scrum, integration with REST services.
             </p>
             <p>
-            Front end Web development with Angular, integration with REST services, HTML / SASS / Librariesbank internals.
+            Front end Web development with Angular v10 - v16, integration with REST services, HTML / SASS / Librariesbank internals / Recaptcha google.
             <br/><br/> 
-            Back end development with NodeJs, relational and non-relational database integration, Express / MongoDB / MySql/Postman/JEST/Jmeter.
+            Back end development with NodeJs, NestJs, relational and non-relational database integration, Express / MongoDB / MySql/Postman/JEST/Jmeter.
             </p>
         </div>
         <div class="cards" onclick="dubeNails()">

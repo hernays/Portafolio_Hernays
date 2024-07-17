@@ -7,6 +7,7 @@ body {
     padding: 0px;
     font-family: sans-serif;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 
@@ -449,7 +450,8 @@ textarea {
 .cards {
     display: flex;
     flex-flow: column wrap;
-    width: 23%;
+    max-width: 330px;
+    background: #ececed;
     padding: 10px;
     margin: 40px;
     border-radius: 10px;
@@ -460,11 +462,11 @@ textarea {
 }
 
 .cards:hover {
-    box-shadow: 1px 1px 5px black, 0px 1px 5px blue, 1px 0px 2px black;
+    box-shadow: 1px 1px 5px black;
 }
 
 .cards:hover {
-    transform: scale(1.1);
+  
 }
 
 
@@ -479,7 +481,7 @@ textarea {
 
 .cards p {
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: sans-serif;
     font-size: 14px;
     text-align: justify;
     transition: all 300ms;
@@ -550,4 +552,69 @@ textarea {
 .banderaEN {
     background: url('../assets/img/en.jpg');
     background-size: 20px 20px;
+}
+
+.modal{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 3565px;
+    background: #00000099;
+}
+.contentModal{
+    background: white;
+    color: black;
+    min-width: 320px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    margin-top: 350px;
+}
+
+.modal div h2{
+    color: black;
+}
+
+
+.modal div div{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 320px;
+    background: white;
+}
+
+.btnModal{
+    min-width: 90px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background: #568ae6;
+    color: white;
+
+}
+.btnModal:hover{
+    opacity: 0.8;
+}
+.hideModal{
+    display: none;
+}
+
+.showScroll{
+    overflow-y: scroll;
+}
+
+#btnInicio{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    background: transparent;
 }

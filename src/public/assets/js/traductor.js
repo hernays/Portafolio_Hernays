@@ -17,7 +17,7 @@ const inicio = (idioma) => {
         menu[3].innerHTML = 'Curriculum';
         tituloHeader.innerHTML = 'Developer Web'
         tituloSobreMi.innerHTML = 'About me';
-        sobreMi1.innerHTML = 'I am a systems engineer with more than 3 years of experience, I constantly continue taking courses for my professional development, I consider myself a person who likes to always be at the forefront of technological advances.';
+        sobreMi1.innerHTML = 'I am a systems engineer with more than 5 years of experience, I constantly continue taking courses for my professional development, I consider myself a person who likes to always be at the forefront of technological advances.';
         sobreMi2.innerHTML = 'Today I am looking for a company that gives me the opportunity to contribute my knowledge and in the same way allows me to grow both professionally and personally.';
         habilidades.innerHTML = 'Skills';
         hobbies[0].innerHTML = 'Family';

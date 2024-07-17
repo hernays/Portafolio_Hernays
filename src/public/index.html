@@ -11,6 +11,16 @@
 </head>
 
 <body>
+    <button id="btnInicio" onclick="subirScroll()"></button>
+    <div class="modal">
+        <div class="contentModal">
+                <h2>Selecciona un Idioma</h2>
+            <div>
+                <button id="btnEspanol" class="btnModal">Espanol</button>
+                <button id="btnIngles"  class="btnModal">Ingles</button>
+            </div>
+        </div>
+    </div>
     <div id="content">
         <div id="content-header">
             <header id="header">
@@ -21,7 +31,7 @@
                 <ul class="ul">
                     <li></li>
                     <li>
-                        <a href="#acercaDeMi">About me</a>
+                        <a id="btnSobreMi" href="#acercaDeMi">About me</a>
                     </li>
                     <li>
                         <a href="#proyectos-link">Projects</a>
