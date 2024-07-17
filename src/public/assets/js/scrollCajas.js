@@ -3,8 +3,6 @@ let animado = document.querySelector('.proyectos');
 
 const f = () => {
     let formulario = document.getElementById('formulario');
-    if (formulario) {
-
         formulario.addEventListener('submit', (e) => {
             e.preventDefault();
             const name = document.getElementById('nombre');
@@ -27,23 +25,22 @@ const f = () => {
                 body: JSON.stringify({ nombre, correo, mensaje })
             })
                 .then(res => {
-                    console.log('lllllll',res)
-                    if (res) {
-                        Swal.fire('Mensaje Enviado');
-                        name.value = '';
-                        email.vale = '';
-                        message.value = '';
+                    if (res !== 500) {
+                    Swal.fire('Mensaje Enviado');
                     }
                 }).catch(res => {
                     if (res) {
                         Swal.fire('Ocurrio un error Siga Intentando');
-                        name.value = '';
-                        email.vale = '';
-                        message.value = '';
                     }
-                });
-        });
-    }
+                }).finally(() => {
+                    name.value = '';
+                    email.vale = '';
+                    message.value = '';
+                    setTimeout(() => {
+                        window.location.reload()
+                    },2000)
+                })
+        })
 }
 
 
