@@ -15,15 +15,19 @@ const f = () => {
             const correo = email.value;
             const mensaje = message.value;
     
-            fetch('http://localhost:1020/correo', {
+            fetch('https://hernays.dubenails.com/correo', {
                 headers: {
                     'Accept': 'application/json',
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With",
+                    "Access-Control-Allow-Methods": "DELETE, POST, GET, OPTIONS",
+                    "Access-Control-Allow-Origin": "*"
                 },
                 method: 'POST',
                 body: JSON.stringify({ nombre, correo, mensaje })
             })
                 .then(res => {
+                    console.log('lllllll',res)
                     if (res) {
                         Swal.fire('Mensaje Enviado');
                     }
