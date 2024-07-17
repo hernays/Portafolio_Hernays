@@ -30,10 +30,16 @@ const f = () => {
                     console.log('lllllll',res)
                     if (res) {
                         Swal.fire('Mensaje Enviado');
+                        name.value = '';
+                        email.vale = '';
+                        message.value = '';
                     }
                 }).catch(res => {
                     if (res) {
                         Swal.fire('Ocurrio un error Siga Intentando');
+                        name.value = '';
+                        email.vale = '';
+                        message.value = '';
                     }
                 });
         });
