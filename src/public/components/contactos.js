@@ -18,7 +18,7 @@ const contacto = () => {
             <textarea id="mensaje"></textarea>
             <br>
 
-            <input class="enviar" type="submit" value="Submit" />
+            <input class="enviar" type="submit" value="Submit" onclick="f()" />
         </form>
     </div>
 </section>`;
