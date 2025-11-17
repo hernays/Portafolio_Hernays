@@ -15,7 +15,7 @@ const inicio = (idioma) => {
         menu[1].innerHTML = 'Projects';
         menu[2].innerHTML = 'Contact';
         menu[3].innerHTML = 'Curriculum';
-        tituloHeader.innerHTML = 'Developer Web'
+        tituloHeader.innerHTML = 'Full Stack Developer'
         tituloSobreMi.innerHTML = 'About me';
         sobreMi1.innerHTML = 'I am a systems engineer with more than 5 years of experience, I constantly continue taking courses for my professional development, I consider myself a person who likes to always be at the forefront of technological advances.';
         sobreMi2.innerHTML = 'Today I am looking for a company that gives me the opportunity to contribute my knowledge and in the same way allows me to grow both professionally and personally.';
@@ -34,7 +34,7 @@ const inicio = (idioma) => {
    menu[1].innerHTML = 'Proyectos';
    menu[2].innerHTML = 'Contacto';
    menu[3].innerHTML = 'Curriculo';
-   tituloHeader.innerHTML = 'Desarrollador Web'
+   tituloHeader.innerHTML = 'Full Stack Developer'
    tituloSobreMi.innerHTML = 'Sobre Mi';
    sobreMi1.innerHTML = 'Soy ingeniero en sistemas con mas de 5 años de experincia, contantemente sigo haciendo cursos para mi desarrollo profesional, me considero una persona que le gusta estar siempre a la vanguardia con los avances tecnologicos.';
    sobreMi2.innerHTML = 'hoy en dia me encuentro en la busqueda de una empresa que me de la oportunidad de poder aportar mis conocimientos y de la misma manera me permita crecer tanto de manera profesional como personal.';

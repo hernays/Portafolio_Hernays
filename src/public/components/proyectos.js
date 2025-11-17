@@ -4,7 +4,7 @@ const proyectos = () => {
     <div id="cards-content">
         <div class="cards" onclick="movistar()">
             <h4 class="hp">Movistar</h4>
-            <img src="https://www.upacifico.cl/wp-content/uploads/2022/01/Movistar.png">
+            <img src="../assets/img/img_movistar.webp">
             <p>
             Updating and maintenance of the content of landings of movistar offers, development of new functionalities and improvements to the code.
             </p>

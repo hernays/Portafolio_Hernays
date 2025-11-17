@@ -451,7 +451,7 @@ textarea {
     display: flex;
     flex-flow: column wrap;
     max-width: 330px;
-    background: #ececed;
+    background: #00000000;
     padding: 10px;
     margin: 40px;
     border-radius: 10px;
@@ -471,8 +471,10 @@ textarea {
 
 
 .cards>img {
-    width: 100%;
+    width: 80%;
     height: 180px;
+    margin: 0px auto;
+    border-radius: 15px;
 }
 
 .cards .mexico {
